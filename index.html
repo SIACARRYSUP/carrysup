@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mana pirmā mājaslapa</title>
-    <!-- Pievienot CSS -->
+    <title>SIA CARRYSUP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Galvene -->
     <header>
-        <h1>Laipni lūdzam CARRY SUP!</h1>
+        <div class="container">
+            <h1>SIA CARRYSUP</h1>
+            <p>Tehnisko līdzekļu un sporta inventāra noma</p>
+        </div>
     </header>
-    <main>
-        <p> CARRY SUP ar HTML, CSS un JavaScript.</p>
-        <button id="myButton">Nospied mani!</button>
+
+    <!-- Saturs -->
+    <main class="container">
+        <section>
+            <h2>Par mums</h2>
+            <p>SIA CARRYSUP piedāvā kvalitatīvu tehnisko līdzekļu un sporta inventāra nomu. Mēs nodrošinām aprīkojumu gan profesionāļiem, gan amatieriem, palīdzot padarīt jūsu aktivitātes vēl baudāmākas.</p>
+        </section>
+
+        <section class="social-media">
+            <h2>Sekojiet mums</h2>
+            <a href="https://www.facebook.com/CarrySUPs" target="_blank" class="facebook-link">
+                <img src="facebook-icon.png" alt="Facebook Ikona"> 
+                Apmeklējiet mūs Facebook
+            </a>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 CARRY SUP SIA </p>
+        <p>© 2024 SIA CARRYSUP. Visas tiesības aizsargātas.</p>
     </footer>
-    <!-- Pievienot JavaScript -->
+
+    <!-- Cookies ziņojums -->
+    <div id="cookie-banner">
+        <p>Mūsu vietne izmanto sīkdatnes, lai nodrošinātu labāko lietošanas pieredzi. Turpinot lietot mūsu vietni, jūs piekrītat sīkdatņu izmantošanai.</p>
+        <button id="accept-cookies">Piekrītu</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
