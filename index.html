@@ -3,55 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CARRYSUP - Tehnisko līdzekļu un sporta inventāra noma </title>
-    <link rel="stylesheet" href="style.css">
+    <title>CARRY SUP - Aktīvās atpūtas inventāra nomā un pakalpojumi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffffff;
+            color: #333;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #0073e6;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #0073e6;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://www.h2o-sports.co.uk/images/products/2019/obrien/Obrien_0003_2019%20hilo%20action%202.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+            background-color: rgba(0, 115, 230, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #ffffff;
+        }
+        .service {
+            text-align: center;
+            max-width: 300px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .service h3 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #0073e6;
+        }
+        .service p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .contact {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0073e6;
+        }
+        .contact a {
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #ffffff;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <!-- Galvene -->
     <header>
-        <div class="container">
-            <h1> CARRYSUP</h1>
-            <p>Tehnisko līdzekļu un sporta inventāra noma jūsu ērtībām!</p>
-        </div>
+        <h1>CARRY SUP</h1>
+        <p>Aktīvās atpūtas inventāra nomā, tirdzniecība un pakalpojumu organizēšana</p>
     </header>
-
-    <!-- Saturs -->
-    <main class="container">
-        <section>
-            <h2>Par mums</h2>
-            <p> CARRYSUP ir uzņēmums, kas piedāvā kvalitatīvu tehnisko līdzekļu un sporta inventāra nomu, kas pielāgota gan profesionāliem sportistiem, gan tiem, kas vēlas baudīt aktīvo atpūtu. Mēs palīdzam realizēt jūsu ieceres ar augstākās kvalitātes aprīkojumu, nodrošinot uzticamību, drošību un komfortu jebkurā situācijā.</p>
-        </section>
-
-        <section>
-            <h2>Mūsu pakalpojumi</h2>
-            <ul>
-                <li><strong>SUP dēļu noma:</strong> Baudiet ūdens aktivitātes ar mūsu kvalitatīviem SUP dēļiem, kas piemēroti gan iesācējiem, gan pieredzējušiem lietotājiem.</li>
-                <li><strong>Velosipēdu noma:</strong> Pārvietojieties ērti un videi draudzīgi ar mūsu velosipēdiem, piemēroti gan pilsētai, gan dabas izpētei.</li>
-                <li><strong>Tehniskie līdzekļi pasākumiem:</strong> Nodrošinām augstākās kvalitātes skaņu, apgaismojuma un citu tehnisko aprīkojumu pasākumu organizēšanai.</li>
-                <li><strong>Speciālais sporta aprīkojums:</strong> Nomājam sporta aprīkojumu, kas pielāgots gan amatieriem, gan profesionāļiem.</li>
-            </ul>
-        </section>
-
-        <section class="social-media">
-            <h2>Sekojiet mums</h2>
-            <p>PIESEKO!</p>
-            <a href="https://www.facebook.com/CarrySUPs" target="_blank" class="facebook-link">
-                <img src="images/facebook-icon.png" alt="CARRYSUP's" /> Apmeklējiet mūs Facebook
-            </a>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2024 SIA CARRYSUP. Visas tiesības aizsargātas.</p>
-    </footer>
-
-    <!-- Cookie piekrišanas ziņojums -->
-    <div id="cookie-banner">
-        <p>Mūsu vietne izmanto sīkdatnes, lai nodrošinātu labāko lietošanas pieredzi. Turpinot lietot mūsu vietni, jūs piekrītat sīkdatņu izmantošanai.</p>
-        <button id="accept-cookies">Piekrītu</button>
+    <nav>
+        <a href="#services">Pakalpojumi</a>
+        <a href="#contact">Kontakti</a>
+    </nav>
+    <div class="hero">
+        <h2>Piedzīvojumi sākas šeit!</h2>
     </div>
-
-    <script src="script.js"></script>
+    <section id="services" class="services">
+        <div class="service">
+            <img src="https://www.h2o-sports.co.uk/images/products/2019/obrien/Obrien_0003_2019%20hilo%20action%202.jpg" alt="SUP dēļu noma">
+            <h3>SUP dēļu noma</h3>
+            <p>Izbaudiet ūdens priekus ar mūsu augstās kvalitātes SUP dēļu nomu.</p>
+        </div>
+        <div class="service">
+            <img src="https://cdn.shopify.com/s/files/1/0088/6567/7417/files/Downloader.la_-648c91ce2c6e5_600x600.jpg?v=1686934016" alt="Pārgājienu nūju noma">
+            <h3>Pārgājienu nūju noma</h3>
+            <p>Izbaudiet dabas skaistumu ar mūsu ērtajām pārgājienu nūjām.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Sazinies ar mums</h2>
+        <p>Tel: +371 20 569 946</p>
+        <a href="https://www.facebook.com/CarrySUPs/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+        </a>
+    </section>
+    <footer>
+        <p>&copy; 2023 CARRY SUP. Visas tiesības aizsargātas.</p>
+    </footer>
 </body>
 </html>
