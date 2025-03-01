@@ -1,34 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARRY SUP - Aktīvās atpūtas inventāra nomā un pakalpojumi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CARRY SUP</h1>
+        <p>Aktīvās atpūtas inventāra nomā, tirdzniecība un pakalpojumu organizēšana</p>
+    </header>
+    <nav>
+        <a href="#services">Pakalpojumi</a>
+        <a href="#contact">Kontakti</a>
+    </nav>
+    <div class="hero">
+        <h2>Piedzīvojumi sākas šeit!</h2>
+    </div>
+    <section id="services" class="services">
+        <div class="service">
+            <img src="https://www.h2o-sports.co.uk/images/products/2019/obrien/Obrien_0003_2019%20hilo%20action%202.jpg" alt="SUP dēļu noma">
+            <h3>SUP dēļu noma</h3>
+            <p>Izbaudiet ūdens priekus ar mūsu augstās kvalitātes SUP dēļu nomu.</p>
+        </div>
+        <div class="service">
+            <img src="https://cdn.shopify.com/s/files/1/0088/6567/7417/files/Downloader.la_-648c91ce2c6e5_600x600.jpg?v=1686934016" alt="Pārgājienu nūju noma">
+            <h3>Pārgājienu nūju noma</h3>
+            <p>Izbaudiet dabas skaistumu ar mūsu ērtajām pārgājienu nūjām.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Sazinies ar mums</h2>
+        <p>Tel: +371 20 569 946</p>
+        <a href="https://www.facebook.com/CarrySUPs/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+        </a>
+    </section>
+    <footer>
+        <p>&copy; 2023 CARRY SUP. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+</html>
