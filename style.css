@@ -1,44 +1,230 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRY SUP - Aktīvās atpūtas inventāra nomā un pakalpojumi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noliktavas inventarizācijas ārpakalpojums B2B | CARRYSUP</title>
+
+  <meta name="description" content="Noliktavas inventarizācijas ārpakalpojums B2B uzņēmumiem. Precīzi, ātri, bez dīkstāves. Warehouse inventory outsourcing.">
+
+  <style>
+    :root {
+      --dark: #0a1730;
+      --light: #f8fbff;
+      --accent: #25D366;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.55;
+    }
+
+    /* TOP BANNER */
+    .top-banner {
+      width: 100%;
+      background: #000;
+    }
+
+    .top-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      max-height: 420px;
+      object-fit: contain;
+    }
+
+    /* HERO CONTENT */
+    .hero {
+      padding: 4rem 1.5rem 3.5rem;
+      background: linear-gradient(180deg, #0a1730, #132a52);
+      color: white;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 4.2rem);
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle-en {
+      font-size: 1.15rem;
+      opacity: 0.8;
+      margin-bottom: 2.2rem;
+    }
+
+    .bullets {
+      font-size: 1.15rem;
+      margin-bottom: 2.4rem;
+      opacity: 0.95;
+    }
+
+    .bullets span {
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .phone {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2.6rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+    }
+
+    .note {
+      margin-top: 0.9rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* FEATURES */
+    .features {
+      padding: 4.5rem 1.5rem;
+      background: white;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2.3rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .features .en {
+      font-size: 1.2rem;
+      opacity: 0.7;
+      margin-bottom: 2.8rem;
+    }
+
+    .grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #f0f7ff;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #b3d4ff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>CARRY SUP</h1>
-        <p>Aktīvās atpūtas inventāra nomā, tirdzniecība un pakalpojumu organizēšana</p>
-    </header>
-    <nav>
-        <a href="#services">Pakalpojumi</a>
-        <a href="#contact">Kontakti</a>
-    </nav>
-    <div class="hero">
-        <h2>Piedzīvojumi sākas šeit!</h2>
+
+<!-- TOP IMAGE BANNER -->
+<div class="top-banner">
+  <img src="https://i.imgur.com/Ig1Rjq4.jpeg" alt="Warehouse inventory counting">
+</div>
+
+<!-- HERO CONTENT -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <h1>Noliktavas inventarizācijas ārpakalpojums B2B</h1>
+
+    <p class="subtitle">
+      Precīza fiziskā inventarizācija bez dīkstāves jūsu komandai
+    </p>
+    <p class="subtitle-en">
+      Accurate warehouse inventory counting without interrupting operations
+    </p>
+
+    <div class="bullets">
+      <span>✔ Darbs arī naktīs un brīvdienās</span>
+      <span>✔ Lieli un mazi noliktavu apjomi</span>
+      <span>✔ Konfidencialitāte un auditam gatavi dati</span>
     </div>
-    <section id="services" class="services">
-        <div class="service">
-            <img src="https://www.h2o-sports.co.uk/images/products/2019/obrien/Obrien_0003_2019%20hilo%20action%202.jpg" alt="SUP dēļu noma">
-            <h3>SUP dēļu noma</h3>
-            <p>Izbaudiet ūdens priekus ar mūsu augstās kvalitātes SUP dēļu nomu.</p>
-        </div>
-        <div class="service">
-            <img src="https://cdn.shopify.com/s/files/1/0088/6567/7417/files/Downloader.la_-648c91ce2c6e5_600x600.jpg?v=1686934016" alt="Pārgājienu nūju noma">
-            <h3>Pārgājienu nūju noma</h3>
-            <p>Izbaudiet dabas skaistumu ar mūsu ērtajām pārgājienu nūjām.</p>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <h2>Sazinies ar mums</h2>
-        <p>Tel: +371 20 569 946</p>
-        <a href="https://www.facebook.com/CarrySUPs/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
-        </a>
-    </section>
-    <footer>
-        <p>&copy; 2023 CARRY SUP. Visas tiesības aizsargātas.</p>
-    </footer>
+
+    <div class="phone">+371 27616379</div>
+
+    <a href="https://wa.me/37127616379?text=Hello!%20I%20am%20interested%20in%20warehouse%20inventory%20outsourcing."
+       class="btn" target="_blank" rel="noopener">
+      Saņemt piedāvājumu 15 minūtēs
+    </a>
+
+    <div class="note">
+      Bezmaksas konsultācija • Tikai B2B
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>Mūsu priekšrocības</h2>
+  <div class="en">Our advantages</div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Bez noliktavas apstādināšanas</h3>
+      <p>Inventory without stopping daily warehouse operations</p>
+    </div>
+
+    <div class="card">
+      <h3>Piemērots auditiem</h3>
+      <p>Audit-ready reports and documentation</p>
+    </div>
+
+    <div class="card">
+      <h3>Elastīgs grafiks</h3>
+      <p>Night, weekend and urgent inventory projects</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  CARRYSUP © 2025 | Warehouse Inventory Outsourcing | B2B only
+</footer>
+
 </body>
 </html>
