@@ -1,157 +1,262 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRY SUP - Aktīvās atpūtas inventāra nomā un pakalpojumi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #ffffff;
-            color: #333;
-            padding: 40px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #0073e6;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #666;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #ffffff;
-            padding: 15px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        nav a {
-            color: #0073e6;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .hero {
-            background-image: url('https://www.h2o-sports.co.uk/images/products/2019/obrien/Obrien_0003_2019%20hilo%20action%202.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        .hero h2 {
-            font-size: 3em;
-            background-color: rgba(0, 115, 230, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-            background-color: #ffffff;
-        }
-        .service {
-            text-align: center;
-            max-width: 300px;
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .service img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .service h3 {
-            font-size: 1.5em;
-            margin: 15px 0;
-            color: #0073e6;
-        }
-        .service p {
-            font-size: 1.1em;
-            color: #666;
-        }
-        .contact {
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .contact h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #0073e6;
-        }
-        .contact a {
-            color: #0073e6;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 10px;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #ffffff;
-            color: #666;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARRYSUP — Warehouse Inventory Outsourcing | Noliktavas Inventarizācija B2B</title>
+  <meta name="description" content="Precīza noliktavas inventarizācija bez dīkstāves. B2B only. Accurate inventory counting. No downtime.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #ffffff;
+      --muted: #cccccc;
+      --accent: #1e90ff;
+      --card: #111122;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* Tīrs attēla baneris – bez teksta virsū */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      min-height: 500px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.75) contrast(1.1);
+    }
+
+    .banner-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.85) 85%, var(--bg) 100%);
+      pointer-events: none;
+    }
+
+    /* Saturs zem attēla */
+    .content {
+      position: relative;
+      background: var(--bg);
+      padding: 5rem 2rem 8rem;
+      text-align: center;
+    }
+
+    .content-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: clamp(3.5rem, 9vw, 7.5rem);
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      margin-bottom: 1.2rem;
+      line-height: 0.92;
+    }
+
+    .subtitle {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 400;
+      opacity: 0.95;
+      margin-bottom: 3rem;
+    }
+
+    .en {
+      font-size: 0.6em;
+      font-weight: 300;
+      opacity: 0.78;
+      display: block;
+      margin-top: 0.4rem;
+    }
+
+    .bullets {
+      font-size: 1.35rem;
+      max-width: 700px;
+      margin: 0 auto 4rem;
+      text-align: left;
+    }
+
+    .bullets span {
+      display: block;
+      margin: 1.3rem 0;
+    }
+
+    .bullets .en {
+      font-size: 0.76em;
+      opacity: 0.72;
+      margin-top: 0.3rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 1.5rem 3.8rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 50px rgba(30, 144, 255, 0.4);
+    }
+
+    .cta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 70px rgba(30, 144, 255, 0.6);
+    }
+
+    .phone {
+      font-size: clamp(2.2rem, 5vw, 3rem);
+      font-weight: 800;
+      margin: 3.5rem 0 2rem;
+    }
+
+    .note {
+      font-size: 1.1rem;
+      opacity: 0.7;
+    }
+
+    /* Advantages */
+    .advantages {
+      padding: 6rem 2rem;
+      text-align: center;
+      background: var(--bg);
+    }
+
+    .advantages h2 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 5rem auto 0;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 2.5rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      padding: 4rem 2rem;
+      text-align: center;
+      font-size: 1rem;
+      opacity: 0.5;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 768px) {
+      .banner { height: 50vh; min-height: 400px; }
+      h1 { font-size: clamp(3rem, 12vw, 5.5rem); }
+      .subtitle { font-size: 1.8rem; }
+      .bullets { font-size: 1.2rem; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>CARRY SUP</h1>
-        <p>Aktīvās atpūtas inventāra nomā, tirdzniecība un pakalpojumu organizēšana</p>
-    </header>
-    <nav>
-        <a href="#services">Pakalpojumi</a>
-        <a href="#contact">Kontakti</a>
-    </nav>
-    <div class="hero">
-        <h2>Piedzīvojumi sākas šeit!</h2>
+
+  <!-- Tīrs attēla baneris bez teksta -->
+  <div class="banner">
+    <img src="https://i.imgur.com/Ig1Rjq4.jpeg" alt="Modern warehouse inventory">
+    <div class="banner-gradient"></div>
+  </div>
+
+  <!-- Viss teksts zem attēla -->
+  <section class="content">
+    <div class="content-inner">
+
+      <h1>
+        <span class="lv">Noliktavas inventarizācija bez dīkstāves</span>
+        <span class="en">Warehouse Inventory – Zero Downtime</span>
+      </h1>
+
+      <div class="subtitle">
+        <span class="lv">Precīzi. Ātri. Konfidenciāli. Tikai B2B.</span>
+        <span class="en">Accurate. Fast. Confidential. B2B only.</span>
+      </div>
+
+      <div class="bullets">
+        <span><strong class="lv">Darbs naktīs un brīvdienās</strong><span class="en">Night and weekend shifts</span></span>
+        <span><strong class="lv">Jebkura apjoma noliktavas</strong><span class="en">Warehouses of any size</span></span>
+        <span><strong class="lv">Auditam gatavi dati</strong><span class="en">Audit-ready documentation</span></span>
+      </div>
+
+      <a href="https://wa.me/37127616379?text=Hello%2C%20interested%20in%20zero-downtime%20inventory%20outsourcing" class="cta" target="_blank" rel="noopener">
+        <span class="lv">Saņemt piedāvājumu 15 minūtēs</span>
+        <span class="en">Get a quote in 15 minutes</span>
+      </a>
+
+      <div class="phone">+371 27616 379</div>
+
+      <div class="note">
+        <span class="lv">Bezmaksas konsultācija • Tikai uzņēmumiem</span>
+        <span class="en">Free consultation • Business only</span>
+      </div>
+
     </div>
-    <section id="services" class="services">
-        <div class="service">
-            <img src="https://www.h2o-sports.co.uk/images/products/2019/obrien/Obrien_0003_2019%20hilo%20action%202.jpg" alt="SUP dēļu noma">
-            <h3>SUP dēļu noma</h3>
-            <p>Izbaudiet ūdens priekus ar mūsu augstās kvalitātes SUP dēļu nomu.</p>
-        </div>
-        <div class="service">
-            <img src="https://cdn.shopify.com/s/files/1/0088/6567/7417/files/Downloader.la_-648c91ce2c6e5_600x600.jpg?v=1686934016" alt="Pārgājienu nūju noma">
-            <h3>Pārgājienu nūju noma</h3>
-            <p>Izbaudiet dabas skaistumu ar mūsu ērtajām pārgājienu nūjām.</p>
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <h2>Sazinies ar mums</h2>
-        <p>Tel: +371 20 569 946</p>
-        <a href="https://www.facebook.com/CarrySUPs/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
-        </a>
-    </section>
-    <footer>
-        <p>&copy; 2023 CARRY SUP. Visas tiesības aizsargātas.</p>
-    </footer>
+  </section>
+
+  <section class="advantages">
+    <h2>
+      <span class="lv">Mūsu priekšrocības</span>
+      <span class="en">Our Advantages</span>
+    </h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3 class="lv">Bez apstādināšanas</h3>
+        <p class="en">Operations continue uninterrupted</p>
+      </div>
+      <div class="card">
+        <h3 class="lv">Elastīgs grafiks</h3>
+        <p class="en">Night, weekend, and urgent projects</p>
+      </div>
+      <div class="card">
+        <h3 class="lv">Pilnīga konfidencialitāte</h3>
+        <p class="en">NDA and audit compliance</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    CARRYSUP © 2025 — Warehouse Inventory Outsourcing B2B<br>
+    <span>Noliktavas inventarizācijas ārpakalpojums uzņēmumiem</span>
+  </footer>
+
 </body>
 </html>
